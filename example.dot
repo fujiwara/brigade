@@ -1,0 +1,6 @@
+digraph example {
+  www1 -> www2 [label = "ssh"];
+  www1 -> www3 [label = "ssh"];
+  www2 -> www4 [label = "ssh"];
+  www2 -> www5 [label = "ssh"];
+}
