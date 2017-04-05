@@ -32,17 +32,17 @@ brigade accepts concatenated the definition and a file content which concatinate
 ```
 
 1. on www1 brigade works
-  - copy srcfile into dstfile.
-  - execute
-    - `ssh www2 bridage /path/to/dstfile`
-    - `ssh www3 bridage /path/to/dstfile`
+   - copy srcfile into dstfile.
+   - execute
+     - `ssh www2 bridage /path/to/dstfile`
+     - `ssh www3 bridage /path/to/dstfile`
 1. on www2 brigade works
-  - copy srcfile into dstfile.
-  - execute
-    - `ssh www4 bridage /path/to/dstfile`
-    - `ssh www5 bridage /path/to/dstfile`
+   - copy srcfile into dstfile.
+   - execute
+     - `ssh www4 bridage /path/to/dstfile`
+     - `ssh www5 bridage /path/to/dstfile`
 1. on www3, www4, www5 brigade works
-  - copy srcfile into dstfile.
+   - copy srcfile into dstfile.
 
 ### Limitations (currently)
 
