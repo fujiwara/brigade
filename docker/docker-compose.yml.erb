@@ -1,0 +1,9 @@
+version: '2'
+services:
+<% ENV['CLIENTS'].to_i.times do|n| %>    
+  node<%= n %>:
+    hostname: node<%= n %>
+    image: brigade:test
+    volumes:
+     - .:/opt/brigade
+<% end %>
