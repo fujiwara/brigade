@@ -12,7 +12,7 @@ go get -u github.com/fujiwara/brigade/cmd/brigade
 
 ## Usage
 
-brigade requires a transfer node definition by text format. e.g.
+brigade uses a transfer definition by text format. e.g.
 
 ```
 # transfer.txt
@@ -25,7 +25,7 @@ www2 -> www5
 
 ![](example.png)
 
-brigade accepts concatenated the definition and a file content which concatinated on STDIN.
+brigade accepts concatenated the definition and a file content on STDIN.
 
 ```
 [www1]$ cat transfer.txt /path/to/srcfile | brigade /path/to/dstfile
