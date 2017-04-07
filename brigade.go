@@ -142,8 +142,9 @@ func (ds *Deliveries) RemoteCommand(dst string, filename string, mode os.FileMod
 	}
 
 	clientConfig := &ssh.ClientConfig{
-		User: os.Getenv("USER"),
-		Auth: []ssh.AuthMethod{ssh.PublicKeys(signer)},
+		User:            os.Getenv("USER"),
+		Auth:            []ssh.AuthMethod{ssh.PublicKeys(signer)},
+		HostKeyCallback: ssh.InsecureIgnoreHostKey(),
 	}
 
 	addr := fmt.Sprintf("%s:%d", dst, 22)
